@@ -7,7 +7,6 @@ const LoginForm = () => {
     event.preventDefault();
     console.log(event.target.email.value);
 
-    // here call the API to signup/login
   };
 
   return (
@@ -15,7 +14,7 @@ const LoginForm = () => {
       <form autocomplete="off" onSubmit={loginSubmit}>
         <div className="p-fluid p-formgrid p-grid">
           <div className="p-4">
-            <h2> Aprendiendo React Hook Forms</h2>
+            <h2> Login</h2>
           </div>
           <div className="p-field p-col-12 p-md-12">
             <span className="p-float-label">
@@ -23,9 +22,9 @@ const LoginForm = () => {
                 id="new-email"
                 type="text"
                 name="new-email"
-                placeholder="introduzca su Email"
+                placeholder="Username"
               />
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Username</label>
             </span>
           </div>
           <div className="p-4"></div>
@@ -36,19 +35,21 @@ const LoginForm = () => {
                 id="new-password"
                 autocomplete="new-password"
                 type="password"
-                placeholder="introduzca su contrasena"
+                placeholder="Password"
               />
-              <label htmlFor="password">Contrasena</label>
+              <label htmlFor="password">Password</label>
             </span>
           </div>
+
           <div className="p-field p-col-12 p-md-12 p-2">
-            <input type="checkbox" id="remenberMe" name="remenberMe" />
-            <label htmlFor="rememberMe" className="p-checkbox-label p-2">
-              Recuerdame
-            </label>
           </div>
           <div className="p-field p-col-12 p-md-12">
-            <Button type="submit" label="Ingresar" />
+            <Button type="submit" label="Login" />
+          </div>
+          <div className="p-field p-col-12 p-md-12 p-2">
+          </div>
+          <div className="p-field p-col-12 p-md-12 ">
+            <Button type="logout" label="Logout" />
           </div>
         </div>
       </form>
